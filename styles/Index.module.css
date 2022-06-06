@@ -37,16 +37,28 @@
     line-height:3rem;
 }
 
+.bajar{
+    text-align: center;
+    
+}
+
+.bajar i{
+    font-size: 3.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
 @media (min-width:792px) {
     .texto{
         margin-top: 15rem;
         margin-bottom: 10rem;
         line-height:4rem;
+        }
     }
 
     
    
-}
+
 
 .ir{
     border-radius: 7px;

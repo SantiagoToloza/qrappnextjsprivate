@@ -1,9 +1,19 @@
 .qrapp{
     width: 300px;
-    height: 500px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 10rem;
 
+}
+
+@media (min-width:792px) {
+    .qrapp{
+        margin-top: 0;
+        width: 400px;
+    }
+    .contenedor{
+        height: 86vh!important;
+    }
 }
 
 .data{
@@ -13,9 +23,13 @@
     font-size: 2rem;
 }
 
-¿
+.text{
+    text-align: center;
+    margin-bottom: 4rem;
+    margin: 0 auto;
+}
 
 
 .contenedor{
-    height: 80vh;
+   height: 80vh;
 }

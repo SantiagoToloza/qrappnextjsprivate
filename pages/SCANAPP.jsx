@@ -22,8 +22,10 @@ const SCANAPP = () => {
               }
             }}
           />
+          <div className={Styles.text}>
           <p className={Styles.master}>Su texto escaneado es :</p>
           <p className={Styles.data}>{data}</p>
+          </div>
         </div>
       </Layout>
     </>

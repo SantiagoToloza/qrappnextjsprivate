@@ -4,14 +4,17 @@ import styles from "../styles/Qrapp.module.css";
 import Layout from "../components/Layout";
 import Image from "next/image";
 const QRAPP = () => {
-  const [text, setText] = useState("b");
+  const [text, setText] = useState();
   const [pretexto, setPretexto] = useState("");
   const [src, setSrc] = useState("");
 
   useEffect(() => {
-    QRCode.toDataURL(text).then((url) => {
-      setSrc(url);
-    });
+    if(text){
+      QRCode.toDataURL(text).then((url) => {
+        setSrc(url);
+      });
+    }
+    
   }, [text]);
 
   const enviar = (e) => {
@@ -41,9 +44,7 @@ const QRAPP = () => {
             />
           </form>
           <div className={styles.img}>
-            {src  ? (
-              <Image layout="fixed" width={300} height={300} src={src} />
-            ) : null}
+            {src  ?  <Image layout="fixed" width={300} height={300} src={src} /> : null }
           </div>
         </div>
       </Layout>

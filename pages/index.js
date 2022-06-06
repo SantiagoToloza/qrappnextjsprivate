@@ -15,7 +15,7 @@ const Home = () => {
                 Con la app qr app podras generar un codigo qr{" "}
                 <span>Al instante </span>{" "}
               </p>
-              <Link href="/QRAPP" >
+              <Link href="/QRAPP">
                 <a className={styles.ir}>IR A CREAR QR </a>
               </Link>
             </div>
@@ -35,7 +35,7 @@ const Home = () => {
                 width={800}
                 layout="responsive"
                 className={styles.imagenscan}
-              /> 
+              />
             </div>
             <div className={styles.texto}>
               <h2>APP PARA CREAR QR</h2>
