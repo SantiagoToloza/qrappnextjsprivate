@@ -4,7 +4,7 @@ const Footer = () => {
     <footer className={styles.principal}>
       <div className={styles.redes}>
         <a href="">
-          <i class={`${styles.facebook} fa-brands fa-facebook`}></i>
+          <i className={`${styles.facebook} fa-brands fa-facebook`}></i>
         </a>
         <a href="">
           <i className={`${styles.linkedin} fa-brands fa-linkedin`}></i>
